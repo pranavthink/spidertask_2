@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./quizstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+</head>
+<body>
+    <video src="./Coronavirus Animation- High Impact Demonstrates How COVID-19 Impacts the Body.mp4" autoplay muted loop></video>
+    <h1><span>Quiz</span><span> App</span></h1>
+    <div id="timer">3:00</div>
+    <div id="liveScore">0</div>
+    <div class="container">
+                <!-- 
+                    <form>
+                        <input 
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="username">
+                        <button class="loginbtn" type="submit" onclick="">
+                            LOG IN 
+                        </button>
+                    </form>
+                -->
+            <div id="game">
+                <h2 id="question">Are you ready to answer some of these questions?</h2>
+                <div class="choice-container">
+                    <button class="choice-text" data-number="1">Choice1</button>
+                </div>
+                <div class="choice-container">
+                    <button class="choice-text" data-number="2">Choice2</button>
+                </div>
+                <div class="choice-container">
+                    <button class="choice-text" data-number="3">Choice3</button>
+                </div>
+                <div class="choice-container">
+                    <button class="choice-text" data-number="4">Choice4</button>
+                </div>
+            </div>
+            <div class="nav">
+                <p id="previous"><span>Previous</span></p>
+                <p id="next"><span>Next</span></p>
+                <div class="action" onclick="actionToggle();">
+                    <span>+</span>
+                    <ul>
+                        <li class="nav-btn">Question 1</li>
+                        <li class="nav-btn">Question 2</li>
+                        <li class="nav-btn">Question 3</li>
+                        <li class="nav-btn">Question 4</li>
+                        <li class="nav-btn">Question 5</li>
+                        <li class="nav-btn">Question 6</li>
+                        <li class="nav-btn">Question 7</li>
+                        <li class="nav-btn">Question 8</li>
+                        <li class="nav-btn">Question 9</li>
+                        <li class="nav-btn">Question 10</li>
+                    </ul>
+                </div>
+            </div>
+
+    </div>
+<div id="end">
+    <div class="loader">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+    </div>
+    <div id="scoreText"></div>
+    <div class="leaderboard">
+        LEADERBOARD:
+        <div id="high-name">Name: </div>
+        <div id="high-score">Score: </div>
+        <div id="high-time">Time: </div>
+    </div>
+</div>
+   
+        <script src="./quiz.js"></script>
+</body>
+</html>
